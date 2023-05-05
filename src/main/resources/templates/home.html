@@ -30,8 +30,8 @@
 					<td th:text="${producto.nombre}"></td>
 					<td th:text="${producto.descripcion}"></td>
 					<td th:text="${producto.precio}"></td>
-					<td><a href="" class=" btn btn-warning">Editar</a></td>
-					<td><a href="" class=" btn btn-danger">Eliminar</a></td>
+					<td><a th:href="@{/productos/edit/{id} (id=${producto.id})}" class=" btn btn-warning">Editar</a></td>
+					<td><a th:href="@{/productos/delete/{id} (id=${producto.id})}" class=" btn btn-danger">Eliminar</a></td>
 				</tr>
 			</tbody>
 			<tfoot>
